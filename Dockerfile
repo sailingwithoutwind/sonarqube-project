@@ -1,6 +1,4 @@
-FROM centos
-ADD start.sh /start.sh
-
-RUN chmod +x /start.sh
-COPY /a.txt /a.txt
-CMD ["/start.sh"]
+FROM index.alauda.cn/alaudaorg/qaimages:helloworld
+LABEL Version="1.1.90790797"
+COPY a.sh /
+RUN chmod +x /a.sh
