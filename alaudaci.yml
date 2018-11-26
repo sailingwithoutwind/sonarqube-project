@@ -4,5 +4,4 @@ pre_ci_boot:
 ci:
     - echo "<h1> $(date) 1234hello1234  world continue1 !</h1>" > test.html
     - cp test.html $ALAUDACI_UPLOAD_DIR
-    - cp -r /app $ALAUDACI_UPLOAD_DIR
     - sleep 2
